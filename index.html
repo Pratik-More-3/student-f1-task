@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>student-form-1</title>
+</head>
+
+<body>
+    <h1 class="bg-primary m-4 py-4 text-white text-center rounded">Student Form</h1>
+    <div class="container mt-4">
+        <div class="col-md-5">
+            <div class="row">
+                <form id="stdform">
+                    <div class="form-group">
+                        <label for="f-name">FName</label>
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="l-name">LName</label>
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact</label>
+                        <input type="text" class="form-control" id="contact">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <lable for="age">Age</lable>
+                        <input type="number" class="form-control" id="age"></input>
+                    </div>
+                    <button type="submit" class="btn btn-sm btn-success btn-block" id="submitbtn">Add Form</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <table class="table table-info mt-4 ">
+                    <thead>
+                        <tr>
+                            <th class="">Sr.No</th>
+                            <th class="">FName</th>
+                            <th class="">LName</th>
+                            <th class="">Contact</th>
+                            <th class="">Email</th>
+                            <th class="">Age</th>
+                            <th class="">Edit</th>
+                            <th class="">Remove</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="studata"></tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
